@@ -1,0 +1,16 @@
+.primary-container{
+    display: flex;
+}
+.nav-container{
+    background-color: green;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 4rem;
+}
+.dashboard-area{
+    flex: 1;
+}
+.admin-summary{
+    padding: 25px;
+}

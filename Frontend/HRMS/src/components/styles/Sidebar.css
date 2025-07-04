@@ -1,0 +1,86 @@
+.main-section {
+  background-color: rgb(38, 38, 36);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 220px;
+  margin-left: 2px 5px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.company-name {
+  color: white;
+  font-size: 22px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.main-menu {
+  color: rgb(244, 228, 228);
+  font-size: 11px;
+  text-align: left;
+  margin-left: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 15px;
+}
+.navlinks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.navlinks .icons {
+  color: white;
+  margin-right: 12px;
+}
+.navlinks span {
+  color: white;
+  font-size: 14px;
+  font-family: monospace;
+}
+.dashboard,
+.employees,
+.departments,
+.leaves,
+.salary,
+.settings {
+  padding: 20px;
+  border-radius: 11px;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+  box-shadow: none;
+  will-change: transform;
+}
+.dashboard:hover,
+.employees:hover,
+.departments:hover,
+.leaves:hover,
+.salary:hover,
+.settings:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.12);
+  transform: scale(1.03);
+  border-radius: 11px;
+}
+.navlinks a.active {
+  text-decoration: none;
+  color: inherit; /* optional: prevents it from turning blue or purple */
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  margin-top: 6rem;
+}
+footer h4 {
+  font-size: 14px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+}
+footer p {
+  color: white;
+  font-size: 12px;
+  margin-top: 5px;
+}
+

@@ -1,0 +1,39 @@
+.parent{
+    display: inline-flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 25px;
+    padding: 15px;
+    border-radius:11px;
+    background-color: rgb(197, 240, 240);
+}
+.parent .div1{
+    color: white;
+    font-size: 1.7rem;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+
+   padding: 10px;
+}
+.parent2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 50px;
+    row-gap: 5px;
+}
+.parent2 .div2{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: monospace;
+}
+.parent2 .div3{
+    font-size: 20px;
+    color: green;
+    font-weight: 500;
+}

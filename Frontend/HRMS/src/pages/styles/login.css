@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+.main-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgb(126, 180, 147);
+}
+.title{
+/*     padding: 10px; */
+    font-size: 32px;
+    margin: 40px auto;
+    color: #ded9d9;
+}
+form{
+    padding: 20px;
+  /*   display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column; */
+    border-radius: 20px;
+    background-color: rgb(218, 215, 212);
+    min-height: 300px;
+    min-width: 400px;
+}
+.headings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+ .form_h2{
+    font-size: 24px;
+
+}
+.form_para{
+    font-size: 16px;
+    
+} 
+.email, .password{
+    text-align: left;
+    margin-bottom: 4px;
+    font-size: 17px;
+}
+.email_div{
+/*     padding: 2px 0px 5px 35px; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+.email_div input{
+    padding: 12px;
+    max-width: 300px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    border: none;
+    outline: none;
+}
+.form_details{
+    margin-top: 20px;
+}
+.short_forms{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.short_forms label{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+
+    gap: 4px;
+}
+.submit_btn{
+    padding: 12px 20px;
+    background-color: cadetblue;
+    color: white;
+    border-radius: 19px;
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px;
+    outline: none;
+    border: none;
+    transition: all 0.72s ease-in-out;
+}
+.submit_btn:hover{
+    background-color: rgb(26, 80, 62);
+}
+.btn_div{
+    display: flex;
+    justify-content: center;
+}
+.errorMsg{
+    color: rgb(255, 0, 0);
+    font-weight: 500;
+}
