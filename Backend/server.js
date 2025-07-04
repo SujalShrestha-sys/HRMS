@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/auth", authRouter);
 
-
+const name = "sujal"
 // Routes
 app.get("/", (req, res) => {
   res.send("Hello world, my name is Sujal Shrestha");
