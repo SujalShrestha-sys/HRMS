@@ -9,9 +9,9 @@ const login = async (req, res) => {
     
 
     if (!user) {
-      return res.status(404).json({
+      return res.status(401).json({
         success: false,
-        error: "User Not Found",
+        error: "Invalid email or password",
       });
     }
 
@@ -19,15 +19,17 @@ const login = async (req, res) => {
     if (!isMatch) {
       return res.status(404).json({
         success: false,
-        error: "Wrong Password",
+        error: "Invalid email or password",
       });
     }
 
     const token = jwt.sign(
-      { _id: user._id, role: user.role },
+      { id: user._id, role: user.role },
       process.env.JWT_KEY,
       { expiresIn: "8d" }
     );
+
+    console.log(token);
 
     res
       .status(200)
