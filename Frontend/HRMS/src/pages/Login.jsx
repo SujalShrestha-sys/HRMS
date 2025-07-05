@@ -31,7 +31,6 @@ const Login = () => {
       );
 
       if (response.data.success) {
-        /*  alert("Successfully logged in"); */
         console.log(response);
 
         const { user, token } = response.data;
@@ -63,7 +62,7 @@ const Login = () => {
     <div className="main-container">
       <h1 className="title">Human Resource Management System</h1>
 
-      <form onSubmit={handleSubmit}>
+      <form className="form" onSubmit={handleSubmit}>
         <div className="headings">
           <h2 className="form_h2">Login form</h2>
           <p className="form_para">

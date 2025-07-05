@@ -16,6 +16,7 @@ const AdminDashboard = () => {
           <div className="nav-container">
             <Navbar />
             <Outlet/>
+            
           </div>
          {/*  <div className="admin-summary">
             <AdminSummary />

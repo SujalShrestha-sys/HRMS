@@ -7,10 +7,10 @@
     justify-content: space-evenly;
     flex-direction: column;
     height: 4rem;
+    gap: 15px;
 }
+
+
 .dashboard-area{
     flex: 1;
-}
-.admin-summary{
-    padding: 25px;
 }

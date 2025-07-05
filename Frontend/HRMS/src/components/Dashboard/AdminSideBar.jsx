@@ -32,7 +32,7 @@ const AdminSideBar = () => {
         </div>
 
         <div className="departments">
-          <NavLink to="/">
+          <NavLink to="/admin-dashboard/departments">
             <LuBuilding2 className="icons" />
             <span>Departments</span>
           </NavLink>

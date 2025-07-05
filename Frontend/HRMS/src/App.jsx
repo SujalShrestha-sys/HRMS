@@ -5,8 +5,10 @@ import Login from "./pages/login";
 import EmployeeDashboard from "./pages/EmployeeDashboard";
 import PrivateRoutes from "./utils/PrivateRoutes";
 import RoleBasedRoutes from "./utils/RoleBasedRoutes";
-import Navbar from "./components/Dashboard/Navbar";
+/* import Navbar from "./components/Dashboard/Navbar"; */
 import AdminSummary from "./components/Dashboard/AdminSummary";
+import DepartmentList from "./components/Department/DepartmentList";
+import AddDepartment from "./components/Department/AddDepartment";
 
 function App() {
   return (
@@ -30,7 +32,12 @@ function App() {
             <Route index element={<AdminSummary />}></Route>
             <Route
               path="/admin-dashboard/departments"
-              element={<AdminSummary />}
+              element={<DepartmentList />}
+            ></Route>
+
+             <Route
+              path="/admin-dashboard/add-department"
+              element={<AddDepartment />}
             ></Route>
           </Route>
           <Route
