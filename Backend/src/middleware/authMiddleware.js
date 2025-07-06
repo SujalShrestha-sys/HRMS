@@ -13,10 +13,11 @@ asses that user forward for further use in protected routes. */
 
 const verifyUser = async (req, res, next) => {
     try {
+        console.log("Incoming Headers:", req.headers);
         const token = req.headers.authorization.split(" ")[1];
 
         if (!token) {
-            return res.status(404).json({
+            return res.status(401).json({
                 success: false,
                 error: "Token not provided",
             });
@@ -36,7 +37,7 @@ const verifyUser = async (req, res, next) => {
 
         /*Looks up the user by ID from the token.
         .select("-password") excludes the password from the result.*/
-        const user = await User.findById(decoded._id).select("-password");
+        const user = await User.findById(decoded.id).select("-password");
 
         if (!user) {
             return res.status(404).json({
@@ -51,7 +52,7 @@ const verifyUser = async (req, res, next) => {
         req.user = user;
         next();
     } catch (error) {
-        console.log("Auth error:" ,error.message);
+        console.error("Login error:", error);
         return res.status(500).json({
             success: false,
             error: "Server side error",
