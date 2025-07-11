@@ -22,7 +22,7 @@ const AddDepartment = () => {
     console.log("Form data:", department);
     console.log("Token:", localStorage.getItem("token"));
 
-    try { 
+    try {
       const response = await axios.post(
         "http://localhost:3000/api/department/add",
         department,
@@ -38,11 +38,11 @@ const AddDepartment = () => {
         navigate("/admin-dashboard/departments");
       }
     } catch (error) {
-      console.error("Full error:", error);
-      console.error("Error response:", error.response?.data);
+/*       console.error("Full error:", error);
+      console.error("Error response:", error.response?.data); */
       if (error.response && !error.response.data.success) {
         alert(error.response.data.error);
-        console.log("AN ERROR OCCURED",error)
+        console.log("AN ERROR OCCURED", error)
       }
     }
   };
@@ -59,6 +59,7 @@ const AddDepartment = () => {
               type="text"
               required
               name="dept_name"
+              value={department.dept_name}
               onChange={handleChange}
               placeholder="Department Name"
             />
@@ -70,7 +71,8 @@ const AddDepartment = () => {
               placeholder="Description..."
               rows={6}
               name="description"
-              id=""
+              value={department.description}
+              onChange={handleChange}
             ></textarea>
           </div>
           <button>Add Department</button>

@@ -1,99 +1,104 @@
 .department-container {
-    padding: 10px 30px
+  padding: 10px 30px;
+  margin: 10px 2.5rem;
+  border-radius: 5px;
 }
 
 .department-container h3 {
-    font-family: monospace;
-    font-size: 22px;
-    font-weight: 500;
-    text-align: center;
-    margin: 10px;
+  font-family: monospace;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  margin: 10px;
 }
 
 .department-container .searchContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .searchContainer input {
-    font-size: 16px;
-    padding: 8px;
-    border: none;
-    outline: none;
+  font-size: 13px;
+  padding: 8px;
+  border: 1px solid green;
+  border-radius: 7px;
+  outline: none;
 }
 
 .btn-department {
-    background-color: powderblue;
-    color: black;
-    padding: 8px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    border-radius: 10px;
-    text-decoration: none;
+  background-color: powderblue;
+  color: black;
+  padding: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 .dep-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .add-deep-container {
-    padding: 10px;
-    min-width: 420px;
-    min-height: 380px;
-    box-shadow: 0px 8px 24px rgba(90, 21, 21, 0.15);
-    margin-top: 50px;
-    border-radius: 16px;
+  padding: 10px;
+  min-width: 420px;
+  min-height: 380px;
+  box-shadow: 0px 8px 24px rgba(90, 21, 21, 0.15);
+  margin-top: 50px;
+  border-radius: 16px;
 }
 
 .dept-heading h1 {
-    font-size: 23px;
-    font-family: monospace;
-    margin: 15px;
-
+  font-size: 23px;
+  font-family: monospace;
+  margin: 15px;
 }
 
 .departmentForm {
-    padding: 10px 20px;
+  padding: 10px 20px;
 }
 
 .dept-name-div,
 .dept-desc-div {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .dept-name-div label,
 .dept-desc-div label {
-    font-size: 17px;
+  font-size: 17px;
 }
 
 .dept-name-div input {
-    padding: 8px;
-    font-size: 13px;
-    margin-bottom: 10px;
+  padding: 8px;
+  font-size: 13px;
+  margin-bottom: 10px;
 }
 
 .dept-desc-di {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .dept-desc-div textarea {
-    padding: 8px;
+  padding: 8px;
 }
 
 .departmentForm button {
-    padding: 10px;
-    width: 100%;
-    border: none;
-    font-size: 18px;
-    color: #fff;
-    margin-top: 20px;
-    background-color: cadetblue;
-    border-radius: 7px;
-    font-family: monospace;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+  margin-top: 20px;
+  background-color: cadetblue;
+  border-radius: 7px;
+  font-family: monospace;
+}
+.department-table{
+  padding: 10px 20px;
 }
